@@ -17,7 +17,7 @@ const LoginPage = ({ navigation }: any) => {
         setShowPassword(false);
     }
     return (
-        <LinearGradient colors={['#f5663b', '#bd068c', '#f5663b']} start={{ x: 1, y: 0 }} end={{ x: 0, y: 1 }} style={styles.container}>
+        <LinearGradient colors={['#66d9ff', '#8861fa', '#19c4fc']} start={{ x: 1, y: 0 }} end={{ x: 0, y: 1 }} style={styles.container}>
             {/* top */}
             <View style={styles.topDesign}>
                 <View style={[styles.bubble, styles.bubble1]} />
@@ -83,16 +83,16 @@ const styles = StyleSheet.create({
         //elevation: 10,
     },
     bubble1: {
-        width: 150,
-        height: 150,
-        borderRadius: 75,
-        top: 80,
-        left: -40,
+        width: 180,
+        height: 180,
+        borderRadius: 90,
+        top: 200,
+        left: -80,
     },
     bubble2: {
-        width: 150,
-        height: 150,
-        borderRadius: 75,
+        width: 180,
+        height: 180,
+        borderRadius: 90,
         top: 170,
         right: -70,
     },
@@ -101,15 +101,19 @@ const styles = StyleSheet.create({
         height: 300,
         borderRadius: 150,
         top: -50,
-        left: 80,
+        left: 40,
     },
     title: {
         fontSize: 36,
         fontWeight: "bold",
         color: "white",
         textAlign: "center",
-        textShadowColor: "black"
+        //textShadowColor: "black",
+        marginTop: 90,
         //fontFamily: "Calibri"
+        textShadowColor: "black",
+        textShadowOffset: { width: 2, height: 2 },
+        textShadowRadius: 15,
     },
     bottomDesign: {
         flex: 2,
@@ -131,14 +135,17 @@ const styles = StyleSheet.create({
         marginBottom: 15,
         backgroundColor: "lightgray",
         fontSize: 22,
+        zIndex: 2
 
     },
     buttonContainer: {
-        backgroundColor: "blue",
+        backgroundColor: "#0a3afa",
+        //backgroundColor: "#f6fa0f",
         paddingVertical: 10,
-        marginBottom: 10,
-        borderRadius: 10,
-        //width: "70%",
+        margin: 10,
+        borderRadius: 25,
+        width: "70%",
+        alignSelf: "center",
         elevation: 3,
         zIndex: 2,
 

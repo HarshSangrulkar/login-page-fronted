@@ -8,9 +8,9 @@ const Dashboard = ({ navigation }: any) => {
     const [buttonOpacity1, setButtonOpacity1] = useState(1);
     const [buttonOpacity2, setButtonOpacity2] = useState(1);
     const [buttonOpacity3, setButtonOpacity3] = useState(1);
-    const goToLogin = () => {
-        navigation.replace("LoginPage");
-    }
+    // const goToLogin = () => {
+    //     navigation.replace("LoginPage");
+    // }
     return (
         <LinearGradient colors={['#f5663b', '#bd068c', '#f5663b']} start={{ x: 1, y: 0 }} end={{ x: 0, y: 1 }} style={styles.container}>
             <Text style={styles.title}>Asset Management System</Text>

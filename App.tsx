@@ -11,8 +11,9 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="LoginPage" screenOptions={{ headerStyle: { backgroundColor: "#e6e6e6" } }}>
-        <Stack.Screen name="LoginPage" component={LoginPage} />
+      <Stack.Navigator initialRouteName="SampleLogin" screenOptions={{ headerStyle: { backgroundColor: "#e6e6e6" } }}>
+        {/* <Stack.Screen name="LoginPage" component={LoginPage} options={{ headerShown: false }} /> */}
+        <Stack.Screen name="SampleLogin" component={SampleLogin} options={{ headerShown: false }} />
         <Stack.Screen name="Dashboard" component={Dashboard} />
       </Stack.Navigator>
     </NavigationContainer>
